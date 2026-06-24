@@ -287,7 +287,7 @@ Name: ${formData.full_name}
 Delivery Date: ${formData.delivery_date}
 Payment: ${formData.payment_method === 'pod' ? 'Pay on Delivery' : 'Bank Transfer'}`;
     
-    window.open(`https://wa.me/${CONFIG.company.phone.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/${CONFIG.whatsapp.number}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const nextStep = () => setStep(s => Math.min(s + 1, 3));

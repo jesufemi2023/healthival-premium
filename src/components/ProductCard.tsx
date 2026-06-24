@@ -192,7 +192,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onQuickView, 
               onClick={(e) => {
                 e.stopPropagation();
                 const message = `Hello SD GHT Health Care, I am interested in ${product.name}. Could you please provide more information on how I can place an order?`;
-                window.open(`https://wa.me/${CONFIG.company.phone.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`, '_blank');
+                window.open(`https://wa.me/${CONFIG.whatsapp.number}?text=${encodeURIComponent(message)}`, '_blank');
               }}
               className="flex-1 bg-white border border-slate-200 text-slate-600 py-2 md:py-2.5 rounded-lg md:rounded-xl font-black text-[10px] md:text-xs hover:bg-slate-50 transition-all flex items-center justify-center gap-1.5 uppercase tracking-widest"
             >

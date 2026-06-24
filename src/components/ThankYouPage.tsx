@@ -42,7 +42,7 @@ ${paymentMethod ? `Payment Method: ${paymentMethod === "pod" ? "Pay on Delivery 
 Please confirm my order and expedite fast delivery! Thank you.`;
 
     window.open(
-      `https://wa.me/${CONFIG.company.phone.replace(/\D/g, "")}?text=${encodeURIComponent(textMessage)}`,
+      `https://wa.me/${CONFIG.whatsapp.number}?text=${encodeURIComponent(textMessage)}`,
       "_blank"
     );
   };

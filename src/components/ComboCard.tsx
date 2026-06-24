@@ -197,7 +197,7 @@ export const ComboCard: React.FC<ComboCardProps> = ({ data, onOrder, onProductCl
                 onClick={(e) => {
                   e.stopPropagation();
                   const message = `Hello SD GHT Health Care, I am interested in the ${data.name} master kit. Could you please provide more information on how I can place an order?`;
-                  window.open(`https://wa.me/${CONFIG.company.phone.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`, '_blank');
+                  window.open(`https://wa.me/${CONFIG.whatsapp.number}?text=${encodeURIComponent(message)}`, '_blank');
                 }}
                 className="flex-1 bg-white border-2 border-slate-200 text-slate-600 h-16 rounded-2xl font-black text-sm hover:bg-slate-50 transition-all flex items-center justify-center gap-3 uppercase tracking-widest"
               >

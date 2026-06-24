@@ -323,7 +323,7 @@ export const PackageQuickView: React.FC<PackageQuickViewProps> = ({
                         <button 
                           onClick={() => {
                             const message = `Hello SD GHT Health Care, I am interested in the ${data.name} package. Could you please provide more information on how I can place an order?`;
-                            window.open(`https://wa.me/${CONFIG.company.phone.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`, '_blank');
+                            window.open(`https://wa.me/${CONFIG.whatsapp.number}?text=${encodeURIComponent(message)}`, '_blank');
                           }}
                           className="flex-1 h-16 bg-white border-2 border-slate-200 text-slate-900 rounded-2xl font-black text-sm md:text-base uppercase tracking-widest hover:bg-slate-50 transition-all flex items-center justify-center gap-2"
                         >
